@@ -1,102 +1,255 @@
-🤖 ML Projects Portfolio
-A collection of 6 beginner-to-intermediate machine learning projects covering core concepts — regression, classification, clustering, and time series prediction — built with Python and scikit-learn.
+# 🤖 Machine Learning Projects Portfolio
 
-📁 Projects Overview
-#ProjectTypeAlgorithm(s)Dataset1Iris Flower ClassificationClassificationKNN, SVM, Decision Tree, Voting EnsembleIris (sklearn)2House Price PredictionRegressionLinear RegressionBoston Housing3Titanic Survival PredictionClassificationLogistic Regression, Random ForestKaggle Titanic4Loan Approval PredictionClassificationLogistic Regression, Decision Tree, Random ForestCustom5Stock Price Trend PredictionTime Series ClassificationLogistic Regression, Random ForestYahoo Finance (AAPL)6Customer SegmentationClusteringKMeans, DBSCAN, HierarchicalMall Customers
+A curated collection of **6 Machine Learning projects** built using **Python, Scikit-Learn, Pandas, and NumPy**. This repository demonstrates practical applications of **Classification, Regression, Clustering, and Time Series Analysis** through real-world datasets and end-to-end ML workflows.
 
-🔍 Project Details
-1. 🌸 Iris Flower Classification
-Folder: 01_iris_classification/
-Classifies iris flowers into 3 species (setosa, versicolor, virginica) using multiple classifiers and combines them into a Voting Ensemble for improved accuracy.
+## 🎯 Objectives
 
-Techniques: Feature scaling, train-test split, ensemble voting (hard/soft)
-Models: KNN, SVM, Decision Tree
-Highlights: Confusion matrix, classification report, model comparison
-Result: High accuracy (~97%) with the ensemble model
+This portfolio showcases:
 
+* Data Cleaning & Preprocessing
+* Exploratory Data Analysis (EDA)
+* Feature Engineering
+* Model Building & Evaluation
+* Hyperparameter Tuning
+* Ensemble Learning
+* Unsupervised Learning
+* Time Series Feature Engineering
 
-2. 🏠 House Price Prediction
-Folder: 02_house_price_prediction/
-Predicts median house prices using the Boston Housing dataset with Linear Regression, including correlation analysis and feature importance.
+Each project follows a complete Machine Learning pipeline from data preparation to model evaluation.
 
-Techniques: Feature scaling, correlation heatmap, residual analysis
-Models: Linear Regression
-Highlights: R² score evaluation, actual vs predicted plot
-Result: Strong regression performance on 13 housing features
+---
 
+## 📂 Projects Included
 
-3. 🚢 Titanic Survival Prediction
-Folder: 03_titanic_survival/
-Classic ML challenge predicting whether a passenger survived the Titanic disaster based on features like age, gender, and class.
+| Project                         | Domain              | ML Type                    | Algorithms                                        |
+| ------------------------------- | ------------------- | -------------------------- | ------------------------------------------------- |
+| 🌸 Iris Flower Classification   | Species Prediction  | Classification             | KNN, SVM, Decision Tree, Voting Ensemble          |
+| 🏠 House Price Prediction       | Real Estate         | Regression                 | Linear Regression                                 |
+| 🚢 Titanic Survival Prediction  | Survival Analysis   | Classification             | Logistic Regression, Random Forest                |
+| 💳 Loan Approval Prediction     | Finance             | Classification             | Logistic Regression, Decision Tree, Random Forest |
+| 📈 Stock Price Trend Prediction | Financial Markets   | Time Series Classification | Logistic Regression, Random Forest                |
+| 🛍️ Customer Segmentation       | Marketing Analytics | Clustering                 | KMeans, DBSCAN, Hierarchical Clustering           |
 
-Techniques: EDA, missing value handling, feature engineering, label encoding
-Models: Logistic Regression, Random Forest
-Highlights: Data cleaning walkthrough, feature selection reasoning
-Dataset: Kaggle Titanic Competition
+---
 
+# 🌸 Iris Flower Classification
 
-4. 💳 Loan Approval Prediction
-Folder: 04_loan_approval/
-Predicts loan approval status based on applicant features like income, loan amount, education, and gender.
+Predicts iris flower species based on petal and sepal measurements.
 
-Techniques: Label encoding, imputation, GridSearchCV for hyperparameter tuning
-Models: Logistic Regression, Decision Tree, Random Forest
-Highlights: Model comparison, confusion matrix, classification report
+### Key Features
 
+* Data Standardization
+* Multi-model Comparison
+* Voting Ensemble Implementation
+* Classification Metrics
+* Confusion Matrix Visualization
 
-5. 📈 Stock Price Trend Prediction
-Folder: 05_stock_price_prediction/
-Predicts whether AAPL stock price will go up or down the next day using historical price data and moving average features.
+### Models Used
 
-Techniques: Feature engineering (SMA 5/10/15), time-series aware train-test split (no shuffle)
-Models: Logistic Regression, Random Forest
-Highlights: yfinance data fetching, directional accuracy metric
-Data: Apple Inc. (AAPL) — 2018 to 2024
+* K-Nearest Neighbors (KNN)
+* Support Vector Machine (SVM)
+* Decision Tree
+* Voting Classifier
 
+**Best Accuracy:** ~97%
 
-6. 🛍️ Customer Segmentation
-Folder: 06_customer_segmentation/
-Segments mall customers into distinct groups based on Annual Income and Spending Score using multiple clustering approaches.
+---
 
-Techniques: Feature scaling, Elbow method, Silhouette scoring, Dendrogram
-Models: KMeans (K=5), DBSCAN, Hierarchical Clustering
-Highlights: Best silhouette score at K=5 (0.55), 5 clear customer segments identified
-Dataset: Mall Customers Dataset
+# 🏠 House Price Prediction
 
+Predicts housing prices using multiple socioeconomic and housing-related features.
 
-🛠️ Tech Stack
+### Key Features
 
-Language: Python 3
-Libraries: pandas, numpy, scikit-learn, matplotlib, seaborn, yfinance, scipy
-Environment: Google Colab / Jupyter Notebook
+* Correlation Analysis
+* Feature Scaling
+* Linear Regression Modeling
+* Residual Analysis
+* Performance Evaluation using R² Score
 
+### Skills Demonstrated
 
-🚀 Getting Started
-bash# Clone the repo
+* Regression Modeling
+* Feature Interpretation
+* Model Evaluation
+
+---
+
+# 🚢 Titanic Survival Prediction
+
+Predicts passenger survival based on demographic and travel information.
+
+### Key Features
+
+* Missing Value Handling
+* Feature Engineering
+* Label Encoding
+* Model Comparison
+* Feature Selection
+
+### Models Used
+
+* Logistic Regression
+* Random Forest
+
+### Skills Demonstrated
+
+* Data Cleaning
+* Classification
+* Feature Engineering
+
+---
+
+# 💳 Loan Approval Prediction
+
+Determines loan approval eligibility using applicant financial and demographic information.
+
+### Key Features
+
+* Missing Value Imputation
+* Categorical Encoding
+* Hyperparameter Tuning using GridSearchCV
+* Model Evaluation
+
+### Models Used
+
+* Logistic Regression
+* Decision Tree
+* Random Forest
+
+### Skills Demonstrated
+
+* Classification
+* Model Optimization
+* Performance Comparison
+
+---
+
+# 📈 Stock Price Trend Prediction
+
+Predicts whether Apple's stock price will move upward or downward on the next trading day.
+
+### Key Features
+
+* Historical Market Data Collection using yFinance
+* Moving Average Feature Engineering
+* Time-Aware Train-Test Split
+* Directional Accuracy Evaluation
+
+### Models Used
+
+* Logistic Regression
+* Random Forest
+
+### Skills Demonstrated
+
+* Time Series Feature Engineering
+* Financial Data Analysis
+* Predictive Modeling
+
+---
+
+# 🛍️ Customer Segmentation
+
+Groups customers into distinct segments based on spending behavior and annual income.
+
+### Key Features
+
+* Feature Scaling
+* Elbow Method
+* Silhouette Score Evaluation
+* Dendrogram Analysis
+
+### Models Used
+
+* KMeans Clustering
+* DBSCAN
+* Hierarchical Clustering
+
+### Outcome
+
+* Identified 5 meaningful customer segments
+* Best Silhouette Score: 0.55
+
+---
+
+## 🛠️ Technology Stack
+
+### Programming Language
+
+* Python
+
+### Libraries
+
+* Pandas
+* NumPy
+* Scikit-Learn
+* Matplotlib
+* Seaborn
+* SciPy
+* yFinance
+
+### Development Environment
+
+* Jupyter Notebook
+* Google Colab
+
+---
+
+## 📊 Machine Learning Skills Demonstrated
+
+✔ Data Cleaning & Preprocessing
+✔ Exploratory Data Analysis (EDA)
+✔ Feature Engineering
+✔ Classification Models
+✔ Regression Models
+✔ Clustering Algorithms
+✔ Ensemble Learning
+✔ Hyperparameter Tuning
+✔ Model Evaluation & Validation
+✔ Time Series Feature Engineering
+
+---
+
+## 🚀 Getting Started
+
+### Clone the Repository
+
+```bash
 git clone https://github.com/Anshu-kumar-singh/ml-projects-portfolio.git
 cd ml-projects-portfolio
+```
 
-# Install dependencies
-pip install pandas numpy scikit-learn matplotlib seaborn yfinance scipy
+### Install Dependencies
 
-# Open any notebook
-jupyter notebook 01_iris_classification/IRIS.ipynb
+```bash
+pip install pandas numpy scikit-learn matplotlib seaborn scipy yfinance
+```
 
-Note: The Titanic project requires a Kaggle API key (kaggle.json) to download the dataset. See Kaggle API docs for setup.
+### Launch Jupyter Notebook
 
+```bash
+jupyter notebook
+```
 
-📊 Skills Demonstrated
+Open any project notebook and run the cells sequentially.
 
-Supervised Learning (Classification & Regression)
-Unsupervised Learning (Clustering)
-Feature Engineering & Selection
-Data Preprocessing & EDA
-Model Evaluation & Comparison
-Hyperparameter Tuning (GridSearchCV)
-Real-world data fetching (Kaggle, yfinance)
+---
 
+## 📌 Future Improvements
 
-👤 Author
-Anshu Kumar Singh
+* Add XGBoost and LightGBM models
+* Deploy projects using Streamlit
+* Add Docker support
+* Implement MLflow for experiment tracking
+* Build CI/CD pipeline for model deployment
 
-GitHub: @Anshu-kumar-singh
+---
+
+## 👨‍💻 Author
+
+**Anshu Kumar Singh**
+
+Aspiring Machine Learning Engineer passionate about building practical AI solutions and learning modern data science workflows.
+
+GitHub: https://github.com/Anshu-kumar-singh
